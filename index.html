@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Happy Birthday Tanya Bahl</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section class="countdown-gate" data-countdown-gate aria-labelledby="countdown-title">
+      <div class="countdown-gate__media" aria-hidden="true"></div>
+      <div class="countdown-gate__content">
+        <p class="eyebrow">Unlocks on 1 June</p>
+        <h1 id="countdown-title">Tanya Bahl's birthday surprise is almost here.</h1>
+        <div class="countdown" data-countdown aria-label="Countdown to Tanya's birthday">
+          <div>
+            <strong data-countdown-days>00</strong>
+            <span>Days</span>
+          </div>
+          <div>
+            <strong data-countdown-hours>00</strong>
+            <span>Hours</span>
+          </div>
+          <div>
+            <strong data-countdown-minutes>00</strong>
+            <span>Minutes</span>
+          </div>
+          <div>
+            <strong data-countdown-seconds>00</strong>
+            <span>Seconds</span>
+          </div>
+        </div>
+        <p class="countdown-gate__copy" data-countdown-copy>
+          Come back when the clock reaches her birthday.
+        </p>
+        <button class="button button--primary countdown-gate__button" type="button" data-enter-site hidden>
+          Open the surprise
+        </button>
+      </div>
+    </section>
+
+    <main class="app">
+      <section class="hero" id="top">
+        <div class="hero__media" aria-hidden="true"></div>
+        <nav class="nav" aria-label="Birthday sections">
+          <a href="#memories">Memories</a>
+          <a href="#songs">Songs</a>
+          <a href="#game">Game</a>
+          <a href="#gift">Gift</a>
+          <a href="#letter">Letter</a>
+        </nav>
+        <div class="hero__content">
+          <p class="eyebrow">Open when the clock says birthday</p>
+          <h1>Happy birthday, Tanya Bahl.</h1>
+          <p class="hero__copy">
+            I made this little place on the internet for your photos, your songs,
+            our tiny jokes, and the parts of us that deserve their own sky.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#memories">Begin</a>
+            <button class="button button--ghost" type="button" data-confetti>
+              Make a wish
+            </button>
+          </div>
+        </div>
+        <div class="scroll-hint" aria-hidden="true">Scroll</div>
+      </section>
+
+      <section class="section intro" aria-labelledby="intro-title">
+        <div>
+          <p class="section__label">Tomorrow becomes yours</p>
+          <h2 id="intro-title">A tiny adventure, made for Tanya Bahl.</h2>
+        </div>
+        <p>
+          Every tap has a little piece of you in it: your photos, songs you love,
+          a small game, a hidden letter, and one gift that needs to be unwrapped.
+        </p>
+      </section>
+
+      <section class="section memories" id="memories" aria-labelledby="memories-title">
+        <div class="section__heading">
+          <p class="section__label">Memory roll</p>
+          <h2 id="memories-title">Tap a photo to flip the moment.</h2>
+        </div>
+        <div class="memory-grid" data-memory-grid></div>
+      </section>
+
+      <section class="section songs" id="songs" aria-labelledby="songs-title">
+        <div class="section__heading">
+          <p class="section__label">Her songs</p>
+          <h2 id="songs-title">A little playlist for the page.</h2>
+        </div>
+        <div class="player">
+          <div class="player__art" aria-hidden="true">
+            <span></span>
+          </div>
+          <div class="player__body">
+            <p class="player__label">Now playing</p>
+            <h3 data-track-title>Birthday Song Placeholder</h3>
+            <p data-track-note>Add her favorite mp3 files to make this real.</p>
+            <audio controls data-audio></audio>
+            <div class="track-list" data-track-list></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section game" id="game" aria-labelledby="game-title">
+        <div class="section__heading">
+          <p class="section__label">Mini game</p>
+          <h2 id="game-title">Catch the wishes before time runs out.</h2>
+        </div>
+        <div class="game-board">
+          <div class="game-board__top">
+            <span>Score <strong data-score>0</strong></span>
+            <span>Time <strong data-time>20</strong>s</span>
+            <button class="icon-button" type="button" data-start-game aria-label="Start game">
+              Play
+            </button>
+          </div>
+          <div class="wish-field" data-wish-field aria-label="Catch falling wishes game"></div>
+        </div>
+      </section>
+
+      <section class="section gift" id="gift" aria-labelledby="gift-title">
+        <div class="section__heading">
+          <p class="section__label">One more surprise</p>
+          <h2 id="gift-title">Unwrap the gift, one tape at a time.</h2>
+        </div>
+        <div class="gift-stage" data-gift-stage>
+          <div class="gift-box" aria-hidden="true">
+            <span class="gift-box__lid"></span>
+            <span class="gift-box__body"></span>
+            <span class="gift-box__ribbon gift-box__ribbon--vertical"></span>
+            <span class="gift-box__ribbon gift-box__ribbon--horizontal"></span>
+          </div>
+          <div class="tape-row" aria-label="Gift wrapping tapes">
+            <button class="tape" type="button" data-tape>tape 1</button>
+            <button class="tape" type="button" data-tape>tape 2</button>
+            <button class="tape" type="button" data-tape>tape 3</button>
+          </div>
+          <div class="gift-card" data-gift-card>
+            <p class="section__label">Gift unlocked</p>
+            <h3>Two birthday gifts for you.</h3>
+            <div class="gift-card__list">
+              <article class="gift-voucher gift-voucher--amazon">
+                <p class="gift-voucher__brand">Amazon</p>
+                <p>Open this when you are ready to choose something that makes you smile.</p>
+                <a
+                  class="button button--primary"
+                  href="https://www.amazon.in/g/G51IQ7LET9K7QPJG?ref=gc_email"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Open Amazon gift card
+                </a>
+              </article>
+              <article class="gift-voucher gift-voucher--vs">
+                <p class="vs-logo">Victoria's Secret</p>
+                <p class="vs-logo__sub">Beauty</p>
+                <dl class="voucher-details">
+                  <div>
+                    <dt>Value</dt>
+                    <dd>Rs. 3000.00</dd>
+                  </div>
+                  <div>
+                    <dt>Code</dt>
+                    <dd>AG17195375359154</dd>
+                  </div>
+                  <div>
+                    <dt>PIN</dt>
+                    <dd>Not required</dd>
+                  </div>
+                  <div>
+                    <dt>Expiry</dt>
+                    <dd>30/11/2026</dd>
+                  </div>
+                </dl>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section quiz" aria-labelledby="quiz-title">
+        <div class="section__heading">
+          <p class="section__label">Secret lock</p>
+          <h2 id="quiz-title">Answer three tiny questions to open the letter.</h2>
+        </div>
+        <form class="quiz__form" data-quiz>
+          <label>
+            What bird resembles you the most?
+            <input name="bird" autocomplete="off" placeholder="Hint: famous mobile game" />
+          </label>
+          <label>
+            What facial part I like the most about you?
+            <input name="favoritePart" autocomplete="off" placeholder="type here" />
+          </label>
+          <label>
+            A nickname I gave you and set as your WhatsApp name
+            <input name="nickname" autocomplete="off" placeholder="type here" />
+          </label>
+          <button class="button button--primary" type="submit">Unlock</button>
+          <p class="quiz__message" data-quiz-message></p>
+        </form>
+      </section>
+
+      <section class="section letter is-locked" id="letter" aria-labelledby="letter-title" data-letter>
+        <div class="section__heading">
+          <p class="section__label">Birthday letter</p>
+          <h2 id="letter-title">For her eyes only.</h2>
+        </div>
+        <div class="letter__paper">
+          <p>My love,</p>
+          <p>
+            Today is my favorite reminder that the world got kinder when you
+            arrived. I hope this year gives you softness, courage, wild laughter,
+            and every little dream you have been quietly carrying.
+          </p>
+          <p>
+            I love the way you make ordinary days feel chosen. I love your voice,
+            your mind, your chaos, your calm, and the way my life feels more like
+            mine when you are in it.
+          </p>
+          <p>Happy birthday my Angry bird. I am so lucky I get to love you.</p>
+          <p class="signature">Always, Utsav</p>
+        </div>
+      </section>
+    </main>
+
+    <audio src="./assets/music/BirthdayBackgroundSong.mp3" loop preload="auto" data-background-audio></audio>
+    <button class="music-toggle" type="button" data-music-toggle aria-label="Toggle background music">
+      Music off
+    </button>
+    <canvas class="confetti" data-confetti-canvas aria-hidden="true"></canvas>
+    <script src="./script.js"></script>
+  </body>
+</html>
